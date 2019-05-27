@@ -73,10 +73,11 @@ matury = Matury()
 
 **Wynik:**
 
-```{'podkarpackie': {2010: 0.81, 
-                     2011: 0.75}, 
-    'polska': {2010: 0.81, 
-               2011: 0.75}}
+```
+{'podkarpackie': {2010: 0.81, 
+                  2011: 0.75}, 
+ 'polska': {2010: 0.81, 
+            2011: 0.75}}
 ```
                     
 3. **najlepsze_woj()** - Funkcja do zadania nr. 3, która Zwraca województwo o najlepszej zdawalności w konkretnym roku
