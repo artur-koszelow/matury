@@ -30,18 +30,19 @@ W konsoli Pythona importujemy klasę Maruty z modułu matury.py:
 
 
 Przykład:
-'''
+
+```
 from matury import Matury
-'''
+```
 
 Następnie tworzyy instancję klasy:
-'''
+```
 matury = Matury()
-'''
+```
 Aplikacja potrzebuje chwili aby zebrać dane.
 Klasa posiada 5 głównych fukncji:
 
-*srednia_liczba_osob - Funkcja do zadania nr. 1, która zwraca średnią liczbę osób które przystąpiły do 
+*srednia_liczba_osob() - Funkcja do zadania nr. 1, która zwraca średnią liczbę osób które przystąpiły do 
                         matury w danym roku i województwie.
     Funkcja przyjmuje 3 parametry:
         - terytorium - (wymagany) Naley podać województwo bądź liste województw dla których chcemy 
@@ -51,13 +52,13 @@ Klasa posiada 5 głównych fukncji:
                 'k' - kobiety
                 'm' - mężczyźni
 Przykład:
-'''
-matury.srednia_liczba_osob('podkarpackie', 2011)
-'''
+```matury.srednia_liczba_osob('podkarpackie', 2011)```
+
+
 Wynik:
-'''
-11594
-'''        
+
+```11594```
+        
 *zdawalnosc - Funkcja do zadania nr. 2, która zwraca procentową zdawalnośc dla danego województwa 
                 na przestrzeni lat. 
     Funkcja przyjmuje 3 parametry:
@@ -69,12 +70,13 @@ Wynik:
                 'k' - kobiety
                 'm' - mężczyźni
 Przykład:
-matury.zdawalnosc(['polska', 'podkarpackie'], 2011)
+```matury.zdawalnosc(['polska', 'podkarpackie'], 2011)```
 Wynik:
-{'podkarpackie': {2010: 0.81, 
+```{'podkarpackie': {2010: 0.81, 
                   2011: 0.75}, 
  'polska': {2010: 0.81, 
             2011: 0.75}}
+```
                     
 *najlepsze_woj - Funkcja do zadania nr. 3, która Zwraca województwo o najlepszej zdawalności w konkretnym roku
     Funkcja przyjmuje 3 parametry:
@@ -85,10 +87,13 @@ Wynik:
                 'k' - kobiety
                 'm' - mężczyźni
 Przykład:
+```
 matury.najlepsze_woj(2011, ['lubuskie', 'mazowieckie'], 'k')
+```
 Wynik:
+```
 'mazowieckie'
-        
+```        
 *spadek_formy - Funkcja do zadania nr. 4, która zwraca województwa, w których zdawalność w kolejnym roku spadła
     Funkcja przyjmuje 2 parametry:
         - terytorium - (domyślny) Można podać województwo lub listę województw, które chcemy sprawdzić, czy zdawalność
@@ -97,12 +102,15 @@ Wynik:
                 'k' - kobiety
                 'm' - mężczyźni
  Przykład:
+ ```
  matury.spadek_formy('polska', 'm')
+ ```
  Wynik:
+ ```
  {'polska': [[2010, 2011], 
              [2013, 2014], 
              [2016, 2017]]}
-         
+ ```
 *i_kto_tu_jest_the_besciak ;) - Funkcja do zadania nr. 5, która zwraca województwo o lepszym wyniku zdawalności dla 
                                 każdego dostępnego roku.
     Funkcja przyjmuje 3 parametry:
@@ -112,8 +120,11 @@ Wynik:
                 'k' - kobiety
                 'm' - mężczyźni
 Przykład:
+```
 matury.i_kto_tu_jest_the_besciak('Świętokrzyskie', 'warmińsko-mazurskie', plec=None)
+```
 Wynik:
+```
 {2010: 'warmińsko-mazurskie',
  2011: 'świętokrzyskie',
  2012: 'warmińsko-mazurskie',
@@ -123,5 +134,5 @@ Wynik:
  2016: 'świętokrzyskie',
  2017: 'świętokrzyskie',
  2018: 'świętokrzyskie'}
-        
+```        
 
