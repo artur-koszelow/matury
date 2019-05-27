@@ -30,11 +30,11 @@ W konsoli Pythona importujemy klasę Maruty z modułu matury.py:
 
 Przykład:
 
->>>from matury import Matury
+from matury import Matury
 
 Następnie tworzyy instancję klasy:
 
->>>matury = Matury()
+matury = Matury()
 
 Aplikacja potrzebuje chwili aby zebrać dane.
 Klasa posiada 5 głównych fukncji:
@@ -49,9 +49,9 @@ Klasa posiada 5 głównych fukncji:
                 'k' - kobiety
                 'm' - mężczyźni
 Przykład:
->>>matury.srednia_liczba_osob('podkarpackie', 2011)
+matury.srednia_liczba_osob('podkarpackie', 2011)
 Wynik:
->>>11594
+11594
         
 *zdawalnosc - Funkcja do zadania nr. 2, która zwraca procentową zdawalnośc dla danego województwa 
                 na przestrzeni lat. 
@@ -64,12 +64,12 @@ Wynik:
                 'k' - kobiety
                 'm' - mężczyźni
 Przykład:
->>>matury.zdawalnosc(['polska', 'podkarpackie'], 2011)
+matury.zdawalnosc(['polska', 'podkarpackie'], 2011)
 Wynik:
->>>{'podkarpackie': {2010: 0.81, 
-                     2011: 0.75}, 
-    'polska': {2010: 0.81, 
-               2011: 0.75}}
+{'podkarpackie': {2010: 0.81, 
+                  2011: 0.75}, 
+ 'polska': {2010: 0.81, 
+            2011: 0.75}}
                     
 *najlepsze_woj - Funkcja do zadania nr. 3, która Zwraca województwo o najlepszej zdawalności w konkretnym roku
     Funkcja przyjmuje 3 parametry:
@@ -80,9 +80,9 @@ Wynik:
                 'k' - kobiety
                 'm' - mężczyźni
 Przykład:
->>>matury.najlepsze_woj(2011, ['lubuskie', 'mazowieckie'], 'k')
+matury.najlepsze_woj(2011, ['lubuskie', 'mazowieckie'], 'k')
 Wynik:
->>>'mazowieckie'
+'mazowieckie'
         
 *spadek_formy - Funkcja do zadania nr. 4, która zwraca województwa, w których zdawalność w kolejnym roku spadła
     Funkcja przyjmuje 2 parametry:
@@ -92,11 +92,11 @@ Wynik:
                 'k' - kobiety
                 'm' - mężczyźni
  Przykład:
- >>>matury.spadek_formy('polska', 'm')
+ matury.spadek_formy('polska', 'm')
  Wynik:
- >>>{'polska': [[2010, 2011], 
-                [2013, 2014], 
-                [2016, 2017]]}
+ {'polska': [[2010, 2011], 
+             [2013, 2014], 
+             [2016, 2017]]}
          
 *i_kto_tu_jest_the_besciak ;) - Funkcja do zadania nr. 5, która zwraca województwo o lepszym wyniku zdawalności dla 
                                 każdego dostępnego roku.
@@ -107,16 +107,16 @@ Wynik:
                 'k' - kobiety
                 'm' - mężczyźni
 Przykład:
->>>matury.i_kto_tu_jest_the_besciak('Świętokrzyskie', 'warmińsko-mazurskie', plec=None)
+matury.i_kto_tu_jest_the_besciak('Świętokrzyskie', 'warmińsko-mazurskie', plec=None)
 Wynik:
->>>{2010: 'warmińsko-mazurskie',
-    2011: 'świętokrzyskie',
-    2012: 'warmińsko-mazurskie',
-    2013: 'warmińsko-mazurskie',
-    2014: 'świętokrzyskie',
-    2015: 'świętokrzyskie',
-    2016: 'świętokrzyskie',
-    2017: 'świętokrzyskie',
-    2018: 'świętokrzyskie'}
+{2010: 'warmińsko-mazurskie',
+ 2011: 'świętokrzyskie',
+ 2012: 'warmińsko-mazurskie',
+ 2013: 'warmińsko-mazurskie',
+ 2014: 'świętokrzyskie',
+ 2015: 'świętokrzyskie',
+ 2016: 'świętokrzyskie',
+ 2017: 'świętokrzyskie',
+ 2018: 'świętokrzyskie'}
         
 
