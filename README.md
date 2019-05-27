@@ -28,14 +28,16 @@ tabeli dla lepszej przejrzystości
 
 W konsoli Pythona importujemy klasę Maruty z modułu matury.py:
 
-Przykład:
 
+Przykład:
+'''
 from matury import Matury
+'''
 
 Następnie tworzyy instancję klasy:
-
+'''
 matury = Matury()
-
+'''
 Aplikacja potrzebuje chwili aby zebrać dane.
 Klasa posiada 5 głównych fukncji:
 
@@ -49,10 +51,13 @@ Klasa posiada 5 głównych fukncji:
                 'k' - kobiety
                 'm' - mężczyźni
 Przykład:
+'''
 matury.srednia_liczba_osob('podkarpackie', 2011)
+'''
 Wynik:
+'''
 11594
-        
+'''        
 *zdawalnosc - Funkcja do zadania nr. 2, która zwraca procentową zdawalnośc dla danego województwa 
                 na przestrzeni lat. 
     Funkcja przyjmuje 3 parametry:
