@@ -12,6 +12,7 @@ Aplikacja służąca do analizy danych o uczestnikach matur od roku 2010 i powst
 ## Technologie
 Projekt stwożony jest z pomocą:
 * Python version 3.7.3
+
 Biblioteki:
 * Urllib
 * Json
