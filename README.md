@@ -50,8 +50,10 @@ matury = Matury()
                         wyliczyć śre∂nią uczestników. Należy zwrócić uwagę na użycie polskich znaków.   
         - **rok** - (wymagany) Rok do którego chcemy wyliczyć średnią od roku 2010
         - **płeć** - (domyślny) -> bez rozróżnienia, 'k' - kobiety, 'm' - mężczyźni
+        
 **Przykład:**
 ```matury.srednia_liczba_osob('podkarpackie', 2011)```
+
 **Wynik:**
 ```11594```
         
@@ -62,8 +64,10 @@ matury = Matury()
                         na użycie polskich znaków.   
         - **rok** - (doyślny) -> maksymalny dostępny. Rok do którego chcemy wyliczyć zdawalność od roku 2010
         - **płeć** - (domyślny) -> bez rozróżnienia, 'k' - kobiety, 'm' - mężczyźni
+        
 **Przykład:**
 ```matury.zdawalnosc(['polska', 'podkarpackie'], 2011)```
+
 **Wynik:**
 ```{'podkarpackie': {2010: 0.81, 
                      2011: 0.75}, 
@@ -77,10 +81,12 @@ matury = Matury()
         - **terytorium** - (domyślny) -> wszystkie. Można podać minimum dwa województwa, które chcemy ze soba porównać dla 
                         danego roku. Należy zwrócić uwagę na użycie polskich znaków.  
         - **płeć** - (domyślny) -> bez rozróżnienia, 'k' - kobiety, 'm' - mężczyźni
+        
 **Przykład:**
 ```
 matury.najlepsze_woj(2011, ['lubuskie', 'mazowieckie'], 'k')
 ```
+
 **Wynik:**
 ```
 'mazowieckie'
@@ -89,10 +95,12 @@ matury.najlepsze_woj(2011, ['lubuskie', 'mazowieckie'], 'k')
     * Funkcja przyjmuje 2 parametry:
         - **terytorium** - (domyślny) Można podać województwo lub listę województw, które chcemy sprawdzić, czy zdawalność w kolejnym roku spadła. Należy zwrócić uwagę na użycie polskich znaków.  
         - **płeć** - (domyślny) -> bez rozróżnienia, 'k' - kobiety 'm' - mężczyźni
+        
  **Przykład:**
  ```
  matury.spadek_formy('polska', 'm')
  ```
+ 
  **Wynik:**
  ```
  {'polska': [[2010, 2011], 
@@ -104,10 +112,12 @@ matury.najlepsze_woj(2011, ['lubuskie', 'mazowieckie'], 'k')
         - **woj_a** - województwo A, do porównanie z województwem B
         - **woj_bv - województwo B, do porównanie z województwem A
         - **płeć** - (domyślny) -> bez rozróżnienia, 'k' - kobiety 'm' - mężczyźni
+        
 **Przykład:**
 ```
 matury.i_kto_tu_jest_the_besciak('świętokrzyskie', 'warmińsko-mazurskie', plec=None)
 ```
+
 **Wynik:**
 ```
 {2010: 'warmińsko-mazurskie',
