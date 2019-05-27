@@ -42,7 +42,7 @@ matury = Matury()
 ```
 *Aplikacja potrzebuje chwili aby zebrać dane.*
 
-Klasa posiada 5 głównych fukncji:
+### Klasa posiada 5 głównych fukncji:
 
 1. **srednia_liczba_osob()** - Funkcja do zadania nr. 1, która zwraca średnią liczbę osób które przystąpiły do matury w danym roku i województwie.
     * Funkcja przyjmuje 3 parametry:
