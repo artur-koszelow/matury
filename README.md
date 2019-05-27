@@ -53,11 +53,15 @@ matury = Matury()
         
 **Przykład:**
 
-```matury.srednia_liczba_osob('podkarpackie', 2011)```
+```
+matury.srednia_liczba_osob('podkarpackie', 2011)
+```
 
 **Wynik:**
 
-```11594```
+```
+11594
+```
         
 2. **zdawalnosc()** - Funkcja do zadania nr. 2, która zwraca procentową zdawalnośc dla danego województwa na przestrzeni lat. 
     * Funkcja przyjmuje 3 parametry:
@@ -69,7 +73,9 @@ matury = Matury()
         
 **Przykład:**
 
-```matury.zdawalnosc(['polska', 'podkarpackie'], 2011)```
+```
+matury.zdawalnosc(['polska', 'podkarpackie'], 2011)
+```
 
 **Wynik:**
 
