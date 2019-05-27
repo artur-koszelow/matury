@@ -90,12 +90,9 @@ Wynik:
 'mazowieckie'
 ```        
 4. spadek_formy - Funkcja do zadania nr. 4, która zwraca województwa, w których zdawalność w kolejnym roku spadła
-    Funkcja przyjmuje 2 parametry:
-        - terytorium - (domyślny) Można podać województwo lub listę województw, które chcemy sprawdzić, czy zdawalność
-                        w kolejnym roku spadła. Należy zwrócić uwagę na użycie polskich znaków.  
-        - płeć - (domyślny) -> bez rozróżnienia,
-                'k' - kobiety
-                'm' - mężczyźni
+* Funkcja przyjmuje 2 parametry:
+- terytorium - (domyślny) Można podać województwo lub listę województw, które chcemy sprawdzić, czy zdawalność w kolejnym roku spadła. Należy zwrócić uwagę na użycie polskich znaków.  
+- płeć - (domyślny) -> bez rozróżnienia, 'k' - kobiety 'm' - mężczyźni
  Przykład:
  ```
  matury.spadek_formy('polska', 'm')
