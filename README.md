@@ -118,7 +118,7 @@ matury.najlepsze_woj(2011, ['lubuskie', 'mazowieckie'], 'k')
 5. **i_kto_tu_jest_the_besciak()** -Funkcja do zadania nr. 5, która zwraca województwo o lepszym wyniku zdawalności dla każdego dostępnego roku.
     * Funkcja przyjmuje 3 parametry:
         - **woj_a** - województwo A, do porównanie z województwem B
-        - **woj_bv - województwo B, do porównanie z województwem A
+        - **woj_b** - województwo B, do porównanie z województwem A
         - **płeć** - (domyślny) -> bez rozróżnienia, 'k' - kobiety 'm' - mężczyźni
         
 **Przykład:**
