@@ -26,10 +26,10 @@ tabeli dla lepszej przejrzystości
 
 ## Uruchomienie
 
-W konsoli Pythona importujemy klasę Maruty z modułu matury.py:
+W konsoli Pythona importujemy klasę **Maruty** z modułu **matury.py**:
 
 
-Przykład:
+**Przykład**:
 
 ```
 from matury import Matury
@@ -42,71 +42,71 @@ matury = Matury()
 Aplikacja potrzebuje chwili aby zebrać dane.
 Klasa posiada 5 głównych fukncji:
 
-1. srednia_liczba_osob() - Funkcja do zadania nr. 1, która zwraca średnią liczbę osób które przystąpiły do matury w danym roku i województwie.
+1. **srednia_liczba_osob()** - Funkcja do zadania nr. 1, która zwraca średnią liczbę osób które przystąpiły do matury w danym roku i województwie.
     * Funkcja przyjmuje 3 parametry:
         - terytorium - (wymagany) Naley podać województwo bądź liste województw dla których chcemy 
                         wyliczyć śre∂nią uczestników. Należy zwrócić uwagę na użycie polskich znaków.   
         - rok - (wymagany) Rok do którego chcemy wyliczyć średnią od roku 2010
         - płeć - (domyślny) -> bez rozróżnienia, 'k' - kobiety, 'm' - mężczyźni
-Przykład:
+**Przykład:**
 ```matury.srednia_liczba_osob('podkarpackie', 2011)```
-Wynik:
+**Wynik:**
 ```11594```
         
-2. zdawalnosc - Funkcja do zadania nr. 2, która zwraca procentową zdawalnośc dla danego województwa na przestrzeni lat. 
+2. **zdawalnosc()** - Funkcja do zadania nr. 2, która zwraca procentową zdawalnośc dla danego województwa na przestrzeni lat. 
     * Funkcja przyjmuje 3 parametry:
         - terytorium - (wymagany) Naley podać województwo bądź liste województw dla których chcemy 
                         wyliczyć procentową zdawalność danego województwa. Należy zwrócić uwagę 
                         na użycie polskich znaków.   
         - rok - (doyślny) -> maksymalny dostępny. Rok do którego chcemy wyliczyć zdawalność od roku 2010
         - płeć - (domyślny) -> bez rozróżnienia, 'k' - kobiety, 'm' - mężczyźni
-Przykład:
+**Przykład:**
 ```matury.zdawalnosc(['polska', 'podkarpackie'], 2011)```
-Wynik:
+**Wynik:**
 ```{'podkarpackie': {2010: 0.81, 
                      2011: 0.75}, 
     'polska': {2010: 0.81, 
                2011: 0.75}}
 ```
                     
-3. najlepsze_woj - Funkcja do zadania nr. 3, która Zwraca województwo o najlepszej zdawalności w konkretnym roku
+3. **najlepsze_woj()** - Funkcja do zadania nr. 3, która Zwraca województwo o najlepszej zdawalności w konkretnym roku
     * Funkcja przyjmuje 3 parametry:
         - rok - (wymagany) Należy podać rok, w których chcemy sprawdzić, które z województw miało najlepszą zdawalność
         - terytorium - (domyślny) -> wszystkie. Można podać minimum dwa województwa, które chcemy ze soba porównać dla 
                         danego roku. Należy zwrócić uwagę na użycie polskich znaków.  
         - płeć - (domyślny) -> bez rozróżnienia, 'k' - kobiety, 'm' - mężczyźni
-Przykład:
+**Przykład:**
 ```
 matury.najlepsze_woj(2011, ['lubuskie', 'mazowieckie'], 'k')
 ```
-Wynik:
+**Wynik:**
 ```
 'mazowieckie'
 ```        
-4. spadek_formy - Funkcja do zadania nr. 4, która zwraca województwa, w których zdawalność w kolejnym roku spadła
+4. **spadek_formy()** - Funkcja do zadania nr. 4, która zwraca województwa, w których zdawalność w kolejnym roku spadła
     * Funkcja przyjmuje 2 parametry:
         - terytorium - (domyślny) Można podać województwo lub listę województw, które chcemy sprawdzić, czy zdawalność w kolejnym roku spadła. Należy zwrócić uwagę na użycie polskich znaków.  
         - płeć - (domyślny) -> bez rozróżnienia, 'k' - kobiety 'm' - mężczyźni
- Przykład:
+ **Przykład:**
  ```
  matury.spadek_formy('polska', 'm')
  ```
- Wynik:
+ **Wynik:**
  ```
  {'polska': [[2010, 2011], 
              [2013, 2014], 
              [2016, 2017]]}
  ```
-5. i_kto_tu_jest_the_besciak-Funkcja do zadania nr. 5, która zwraca województwo o lepszym wyniku zdawalności dla każdego dostępnego roku.
+5. **i_kto_tu_jest_the_besciak()** -Funkcja do zadania nr. 5, która zwraca województwo o lepszym wyniku zdawalności dla każdego dostępnego roku.
     * Funkcja przyjmuje 3 parametry:
         - woj_a - województwo A, do porównanie z województwem B
         - woj_b - województwo B, do porównanie z województwem A
         - płeć - (domyślny) -> bez rozróżnienia, 'k' - kobiety 'm' - mężczyźni
-Przykład:
+**Przykład:**
 ```
 matury.i_kto_tu_jest_the_besciak('świętokrzyskie', 'warmińsko-mazurskie', plec=None)
 ```
-Wynik:
+**Wynik:**
 ```
 {2010: 'warmińsko-mazurskie',
  2011: 'świętokrzyskie',
