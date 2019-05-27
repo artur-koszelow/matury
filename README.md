@@ -19,9 +19,9 @@ Biblioteki:
 * Pytest
 
 Wymagania techniczne rekrutacji wymagały wykorzystania modułów ze standardowej biblioteki Pythona.
-- Osobiścię do wykonania zadanie użyłbym biblioteki Requests zamias Urllib, gdyż ma wbudowaną funkcję odczytu danych 
+- Osobiście do wykonania zadanie użyłbym biblioteki *requests* zamias *urllib*, gdyż ma wbudowaną funkcję odczytu danych 
 w formie json, co by oszczędziło kilka linijek kodu i uprościło sprawę.
-- Użyłbym również biblioteki Pandas do obróbki danych. Wczytał bym wszystkie dane do tabeli po czym, korzystając
+- Użyłbym również biblioteki *pandas* do obróbki danych. Wczytał bym wszystkie dane do tabeli po czym, korzystając
 z wbudowanych funkcji wyszukiwałbym określonych wierszy. Ponadto, wyniki poszczególnych operacji zwracałbym w formie 
 tabeli dla lepszej przejrzystości
 
