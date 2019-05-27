@@ -52,9 +52,11 @@ matury = Matury()
         - **płeć** - (domyślny) -> bez rozróżnienia, 'k' - kobiety, 'm' - mężczyźni
         
 **Przykład:**
+
 ```matury.srednia_liczba_osob('podkarpackie', 2011)```
 
 **Wynik:**
+
 ```11594```
         
 2. **zdawalnosc()** - Funkcja do zadania nr. 2, która zwraca procentową zdawalnośc dla danego województwa na przestrzeni lat. 
@@ -66,9 +68,11 @@ matury = Matury()
         - **płeć** - (domyślny) -> bez rozróżnienia, 'k' - kobiety, 'm' - mężczyźni
         
 **Przykład:**
+
 ```matury.zdawalnosc(['polska', 'podkarpackie'], 2011)```
 
 **Wynik:**
+
 ```{'podkarpackie': {2010: 0.81, 
                      2011: 0.75}, 
     'polska': {2010: 0.81, 
@@ -83,11 +87,13 @@ matury = Matury()
         - **płeć** - (domyślny) -> bez rozróżnienia, 'k' - kobiety, 'm' - mężczyźni
         
 **Przykład:**
+
 ```
 matury.najlepsze_woj(2011, ['lubuskie', 'mazowieckie'], 'k')
 ```
 
 **Wynik:**
+
 ```
 'mazowieckie'
 ```        
@@ -97,11 +103,13 @@ matury.najlepsze_woj(2011, ['lubuskie', 'mazowieckie'], 'k')
         - **płeć** - (domyślny) -> bez rozróżnienia, 'k' - kobiety 'm' - mężczyźni
         
  **Przykład:**
+ 
  ```
  matury.spadek_formy('polska', 'm')
  ```
  
  **Wynik:**
+ 
  ```
  {'polska': [[2010, 2011], 
              [2013, 2014], 
@@ -114,11 +122,13 @@ matury.najlepsze_woj(2011, ['lubuskie', 'mazowieckie'], 'k')
         - **płeć** - (domyślny) -> bez rozróżnienia, 'k' - kobiety 'm' - mężczyźni
         
 **Przykład:**
+
 ```
 matury.i_kto_tu_jest_the_besciak('świętokrzyskie', 'warmińsko-mazurskie', plec=None)
 ```
 
 **Wynik:**
+
 ```
 {2010: 'warmińsko-mazurskie',
  2011: 'świętokrzyskie',
